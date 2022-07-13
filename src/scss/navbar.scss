@@ -1,0 +1,32 @@
+nav {
+    font-size: 16px;
+}
+
+.nav-container {
+    max-width: 1250px;
+    margin: 0 2rem;
+    margin: auto;
+}
+
+.nav-list {
+    margin: 0;
+    padding: 1rem 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center
+}
+
+.nav-list .nav-item {
+    color: white;
+    font-size: 0.7em;
+    list-style: none;
+    margin-right: 2rem;
+    text-decoration: none;
+}
+
+// logo
+.nav-item:first-child {
+    margin-right: auto;
+    margin-left: 2rem;
+}

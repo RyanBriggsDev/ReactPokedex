@@ -1,0 +1,23 @@
+@font-face {
+    font-family: PokemonGB;
+    src: url(../assets/PokemonGB.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: PokemonGB;
+}
+
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 2rem;
+    margin: auto;
+    padding:0 2rem;
+}
