@@ -11,7 +11,7 @@ function Navbar() {
           <Link className="nav-item" to={'/home'}>
             <li>Pokédex</li>
           </Link>
-          <Link className="nav-item" to={'/'}>
+          <Link className="nav-item" to={'/home'}>
             <li>Search</li>
           </Link>
           <Link className="nav-item" to={'/about'}>

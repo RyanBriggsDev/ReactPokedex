@@ -13,11 +13,73 @@ body {
     color: white;
     margin: 0;
     padding: 0;
+    height: 100%;
 }
+
+// remove default styles
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+// layout
+
+.page-layout {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-container {
+    margin: auto 0;
+    width: 100%;
+}
+
+// containers
 
 .container {
     max-width: 1250px;
     margin: 0 2rem;
     margin: auto;
     padding:0 2rem;
+}
+
+// button
+
+.btn {
+    background: none;
+    border-radius: 5px;
+    border: 1px white solid;
+	color: white;
+	cursor: pointer;
+	// outline: inherit;
+    padding: 1rem 2rem;
+}
+
+.btn-primary {
+    background: none;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: black;
+}
+
+// display classes
+
+.block {
+    display: block;
+    margin: 2rem 0;
+    color: white;
+}
+
+// margin / padding 
+.m-1 {
+    margin: 1rem;
+}
+
+.p-1 {
+    padding: 1rem;
 }

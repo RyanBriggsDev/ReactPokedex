@@ -25,6 +25,10 @@ nav {
     text-decoration: none;
 }
 
+.nav-list .nav-item:hover {
+    color: rgba(0, 187, 255, 0.639);
+}
+
 // logo
 .nav-item:first-child {
     margin-right: auto;
