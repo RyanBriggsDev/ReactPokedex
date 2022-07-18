@@ -5,6 +5,8 @@ import PokeSearchList from '../components/pokemon/PokeSearchList'
 function Home() {
   return (
     <>
+      <h1>Pokédex</h1>
+      <p className='mb-2'>by RyanBriggsDev</p>
       <PokeSearch />
       <PokeSearchList />
     </>
