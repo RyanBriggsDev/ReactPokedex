@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import PokeContext from '../../context/PokeContext'
 import PokeItem from './PokeItem'
+import Loading from '../layout/Loading'
 
 function PokeSearchList() {
 
@@ -14,7 +15,7 @@ function PokeSearchList() {
     if (callComplete === false) {
       return <p>Error - can't find em'</p>
     } else {
-      return <p>loading...</p>
+      return <Loading />
     }
 }
 }

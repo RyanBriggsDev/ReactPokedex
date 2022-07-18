@@ -18,6 +18,7 @@ return (
               <div>
                 <Routes>
                     <Route path='/about' element={<About />} />
+                    <Route path='/' element={<Home />} />
                     <Route path='/home' element={<Home />} />
                     <Route path='/notfound' element={<NotFound />} />
                     <Route path='/*' element={<NotFound />} />
