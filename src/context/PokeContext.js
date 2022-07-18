@@ -24,14 +24,12 @@ const pokeUrl = 'https://pokeapi.co/api/v2/pokemon/'
             setLoading(true)
             const response = await fetch(pokeUrl + searchTerm)
             if(!response.ok) {
-                console.log('error');
                 setCallComplete(false)
             } else {
                 const data = await response.json()
                     setPokemon(data)
                     setLoading(false)
                     setCallComplete(true)
-                    console.log(pokemon)
             }
         } else {
             return alert('enter a search term')

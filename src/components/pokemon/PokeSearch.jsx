@@ -10,7 +10,7 @@ function PokeSearch() {
         <form onSubmit={handleFormSubmit}>
             <input className='form-input btn border-r-l'
                    type="text" 
-                   placeholder='bulbasaur'
+                   placeholder='Charmander'
                    onChange={captureData}
             />
             <input className='form-submit btn btn-primary border-r-r' type="submit"/>
