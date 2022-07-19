@@ -15,7 +15,7 @@ function PokeSearch() {
             />
             <input className='form-submit btn btn-primary border-r-r' type="submit"/>
         </form>
-        <button className="btn btn-primary border-r-a mt-1" onClick={handleClear}>Clear Search</button>
+        <button className="form-clear btn btn-primary border-r-a mt-1" onClick={handleClear}>Clear Search</button>
     </>
   )
 }

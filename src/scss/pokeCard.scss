@@ -1,0 +1,75 @@
+.card {
+    background: none;
+    display: inline-block;
+    background: white;
+    padding: 0.5rem;
+}
+
+.card-grid {
+    background-color: goldenrod;
+    padding: 30px;
+}
+
+.p {
+    margin: 0;
+    padding: 0;
+}
+
+// grid
+
+.card-grid {
+    display: grid;
+    grid-gap: 0 30px;
+    //  grid-template-columns: repeat(1fr, 3);
+     grid-template-areas: 
+     'poke-img poke-img poke-id'
+     'poke-img poke-img poke-hp'
+     'poke-img poke-img poke-type'
+     'poke-img poke-img poke-height'
+     'poke-img poke-img poke-weight'
+     'poke-name poke-name poke-move';
+}
+
+#poke-img {
+    grid-area: poke-img;
+    width: 200px;
+    margin: 0 auto;
+}
+
+#poke-name {
+    grid-area: poke-name;
+    text-align: center;
+}
+
+#poke-id {grid-area: poke-id;}
+
+#poke-hp {grid-area: poke-hp;}
+
+#poke-type {grid-area: poke-type;}
+
+#poke-height {grid-area: poke-height;}
+
+#poke-weight {grid-area: poke-weight;}
+
+#poke-move {grid-area: poke-move;}
+
+@media screen and (max-width: 500px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'poke-img'
+            'poke-name'
+            'poke-id'
+            'poke-hp'
+            'poke-type'
+            'poke-height'
+            'poke-weight'
+            'poke-move'
+    }
+    #poke-img {
+        width: 150px;
+    }
+    .card{ 
+        width: 100%;
+    }
+}

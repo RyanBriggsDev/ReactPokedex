@@ -55,7 +55,7 @@ a, a:hover, a:focus, a:active {
     padding: 1rem 2rem;
     outline: none;
     box-shadow: 0px 0px 5px white;
-    border:1px solid white;
+    border: 1px solid white;
 }
 
 .btn-primary {
@@ -109,6 +109,10 @@ a, a:hover, a:focus, a:active {
     padding: 3rem;
 }
 
+.pt-1 {
+    padding: 1rem;
+}
+
 // form
 
 .form-input {
@@ -133,15 +137,30 @@ a, a:hover, a:focus, a:active {
     padding: 1rem 3rem;
 }
 
-// poke item
+// media queries
 
-.poke-item {
-    // width: 100%;
-    background-color: rgb(40, 40, 40);
-    box-shadow: 1px 1px 10px whitesmoke;
-    display: grid;
-    justify-items: left;
-    align-items: center;
-    padding: 30px;
-    margin-top: 2rem;
+@media screen and (max-width: 990px) {
+    .about-link {
+        display: block;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .form-input, .form-submit, .form-clear {
+        width: 100%;
+    }
+    .about-link {
+        width: 100%;
+    }
+    .m-1 {
+        margin: 1rem 0;
+    }
+    .loading {
+        width: 100%;
+        display: grid;
+    }
+    .loading-img {
+        margin: 0 auto;
+    }
 }

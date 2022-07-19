@@ -47,6 +47,33 @@ const pokeUrl = 'https://pokeapi.co/api/v2/pokemon/'
         setPokemon([])
     }
 
+    const capitaliseEachWord = (input) => {
+        // split into an array of words
+        const words = input.split(" ");
+    
+        // loop over array and capitalise each word
+        for (let i = 0; i < words.length; i++) {
+            // capitalise each letter of each word + add capitalised letter back to word
+            words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+        }
+        // recreate string
+        return words.join(" ")
+    }
+    
+    const capitalise = (input) => {
+        // convert all to lower case
+        let lower = input.toLowerCase();
+        // grab first letter of word/sentence
+        let first = lower.charAt(0);
+        // uppercase first letter
+        let upper = first.toUpperCase();
+        // take the initial string and save all but first letter
+        let remainer = lower.slice(1, );
+        // add pieces together
+        let capResult = upper + remainer;
+        return capResult;
+    }
+
     return <PokeContext.Provider value={{
             pokemon, 
             loading,
@@ -56,6 +83,8 @@ const pokeUrl = 'https://pokeapi.co/api/v2/pokemon/'
             setLoading,
             handleFormSubmit,
             handleClear,
+            capitaliseEachWord,
+            capitalise,
     }}>
         {children}
     </PokeContext.Provider>
